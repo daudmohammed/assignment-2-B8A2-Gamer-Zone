@@ -138,6 +138,11 @@ h1.banner-title {
     justify-content: space-around;
     align-items: center;
 }
+.banner-content .fa-circle-play,
+.banner-content .fa-cloud-arrow-down,
+.banner-content .fa-users{
+    margin-right: 10px;
+}
 .banner-image img {
     max-width: 570px;
 }
@@ -441,10 +446,17 @@ i.fa-brands {
 /* responsive css */
 
 @media screen and (max-width: 576px) {
-
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-image {
+        margin-bottom: 150px;
+    }
+    .banner-content > ul{
+        text-align: left;
+    }
     .nav-right > ul,
-    nav,
-    .banner,
+    nav,    
     .intro,
     .cards,
     .feature-1,
